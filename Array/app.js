@@ -76,13 +76,14 @@
 // que 1 -palindrome Number
 // An integer is a palindrone when it reads the same forward and backward.
 
-const isPalidrome = function (x) {
-    if (x < 0) return false;
+// const isPalidrome = function (x) {
+//     if (x < 0) return false;
 
-    return x === +x.toString().split("").reverse().join("");
-};
-const res = isPalidrome(433);
-console.log(res);
+//     return x === +x.toString().split("").reverse().join("");
+// };
+// const res = isPalidrome(433);
+// console.log(res);
+
 
 
 
