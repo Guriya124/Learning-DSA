@@ -35,36 +35,56 @@
 // console.log("c", myArr);
 // console.log(myn2);
 
-const marvel_Heros = ["spiderman", "thor", "ironman"];
-const dc_Heros = ["batman", "flash", "superman"];
+// const marvel_Heros = ["spiderman", "thor", "ironman"];
+// const dc_Heros = ["batman", "flash", "superman"];
 
-// concat() method is used to merge two or more arrays.
-// This method does not change the existing arrays, but instead returns a new array.
+// // concat() method is used to merge two or more arrays.
+// // This method does not change the existing arrays, but instead returns a new array.
 
-// const allheros = marvel_Heros.concat(dc_Heros);
-// console.log(allheros);
+// // const allheros = marvel_Heros.concat(dc_Heros);
+// // console.log(allheros);
 
-// spread(...)
+// // spread(...)
 
-const allHeros = [...marvel_Heros, ...dc_Heros];
-// console.log(allHeros);
+// const allHeros = [...marvel_Heros, ...dc_Heros];
+// // console.log(allHeros);
 
-// flat method Returns a new array with all sub-array elements concatenated into it recursively up to the specified depth.
-const arr = [1, 2, 3, [4, 5, 6], 7, [8, 9, [10, 12]]]
+// // flat method Returns a new array with all sub-array elements concatenated into it recursively up to the specified depth.
+// const arr = [1, 2, 3, [4, 5, 6], 7, [8, 9, [10, 12]]]
 
-const another_array = arr.flat(Infinity);
-console.log(another_array);
+// const another_array = arr.flat(Infinity);
+// console.log(another_array);
 
-console.log(Array.isArray("Guriya"));
+// console.log(Array.isArray("Guriya"));
 
-console.log(Array.from("Guriya"));
-console.log(Array.from({ name: "Guriya" }));  // interesting
+// console.log(Array.from("Guriya"));
+// console.log(Array.from({ name: "Guriya" }));  // interesting
 
-let score1 = 100;
-let score2 = 200;
-let score3 = 300;
+// let score1 = 100;
+// let score2 = 200;
+// let score3 = 300;
 
-// Array.of() method is returns a new array from a set of elements.
-console.log(Array.of(score1, score2, score3));
+// // Array.of() method is returns a new array from a set of elements.
+// console.log(Array.of(score1, score2, score3));
+
+
+// ----------------------------------------------------------------------------------------------------
+// ------------------------------------QUESTIONS ------------------------------------------------------
+// push Method :- he .push() method adds one or more elements to the end of an array and returns the new length.
+// for Examples are
+
+// que 1 -palindrome Number
+// An integer is a palindrone when it reads the same forward and backward.
+
+const isPalidrome = function (x) {
+    if (x < 0) return false;
+
+    return x === +x.toString().split("").reverse().join("");
+};
+const res = isPalidrome(433);
+console.log(res);
+
+
+
 
 
