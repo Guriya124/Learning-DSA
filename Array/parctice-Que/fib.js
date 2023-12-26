@@ -15,10 +15,51 @@
 
 // using recursion
 
-const fib = function (n) {
-    if (n <= 1) return n;
+// const fib = function (n) {
+//     if (n <= 1) return n;
 
-    return fib(n - 1) + fib(n - 2);
+//     return fib(n - 1) + fib(n - 2);
 
-};
-console.log(fib(7));
+// };
+// console.log(fib(7));
+
+// Inbuilt loop Mrthod
+
+const numbers = [1, 2, 3, 4, 5, 6];
+
+// Map in javascript
+
+numbers.map((item, index, array) => {
+    return item + 3;
+});
+// filter in javascript
+const newNums = numbers.filter((item, index, array) => {
+    return item > 3;
+});
+
+// reduce in javascript
+
+const sum = numbers.reduce((prev, item,) => {
+    return prev + item;
+}, 3);
+
+// some in javascript. It return Ture & False
+
+numbers.some((item, index, array) => {
+    return item > 3;
+});
+
+// every in javascript. It check all the element and then return true & false.
+numbers.every((item, index, array) => {
+    // return item > 3; // it return false
+    return item < 10; // it return true
+
+});
+
+// FIND in javascript. Returns the value of the first element in the array where predicate is true, and undefined otherwise.
+const res = numbers.find((item, index, array) => {
+    // return item > 3; // return 4
+    return item > 6; //return undefine
+});
+
+console.log(res);
