@@ -23,7 +23,7 @@
 // };
 // console.log(fib(7));
 
-// Inbuilt loop Mrthod
+// Inbuilt loop Method
 
 const numbers = [1, 2, 3, 4, 5, 6];
 
