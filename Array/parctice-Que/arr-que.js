@@ -104,5 +104,23 @@ function removeDuplicate(nums) {
     return i + 1;
 }
 
-console.log(removeDuplicate([0, 1, 2, 2, 3, 3, 5, 5, 6, 6]));
+// console.log(removeDuplicate([0, 1, 2, 2, 3, 3, 5, 5, 6, 6]));
 
+// Ques-4 Move  all zero in an Array to End of the Array
+
+function moveZero(nums) {
+    let len = nums.length;
+    let count = 0;
+
+    for (let i = 0; i < len; i++) {
+        if (nums[i] !== 0) {
+            nums[count++] = nums[i];
+        }
+    }
+
+    while (count < len) {
+        nums[count++] = 0;
+    }
+    return nums;
+}
+console.log(moveZero([0, 1, 2, 0, 0, 3, 4, 5, 0, 6]));
