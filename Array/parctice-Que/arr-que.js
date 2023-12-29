@@ -123,4 +123,23 @@ function moveZero(nums) {
     }
     return nums;
 }
-console.log(moveZero([0, 1, 2, 0, 0, 3, 4, 5, 0, 6]));
+// console.log(moveZero([0, 1, 2, 0, 0, 3, 4, 5, 0, 6]));
+
+// Que-5 Maxmum difference between increasing Element
+function maxmumDifference(nums) {
+    let maxDiff = -1;
+
+    for (let i = 0; i < nums.length; i++) {
+        for (let j = i + 1; j < nums.length; j++) {
+            if (nums[j] > nums[i]) {
+                let diff = nums[j] - nums[i];
+                if (diff > maxDiff) {
+                    maxDiff = diff;
+                }
+            }
+        }
+    }
+    return maxDiff;
+}
+
+// console.log(maxmumDifference([50, 40, 4, 10, 45, 15]));
