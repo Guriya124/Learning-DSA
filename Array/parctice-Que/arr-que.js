@@ -143,3 +143,21 @@ function maxmumDifference(nums) {
 }
 
 // console.log(maxmumDifference([50, 40, 4, 10, 45, 15]));
+
+
+function maxSubArray(nums) {
+    let maxSum = nums[0];
+
+    for (let i = 0; i < nums.length; i++) {
+        let currentSum = 0;
+        for (let j = i; j < nums.length; j++) {
+            currentSum = currentSum + nums[j];
+            if (currentSum > maxSum) {
+                maxSum = currentSum;
+            }
+        }
+    }
+    return maxSum;
+}
+
+console.log(maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]))
